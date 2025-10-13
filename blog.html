@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-web-page</title>
+    <link rel="stylesheet" href="./asset/reset.css">
+    <link rel="stylesheet" href="./asset/style.css">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-header blog-web-page">
+        <!-- Header Section -->
+        <section class="header">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.4784 14.932C18.2277 8.71465 11.5201 8.30287 9.76373 8.30287C0.390773 8.30287 0.917407 16.2248 0.917407 16.2262H4.61785C5.28174 16.2262 5.61789 15.7934 5.80557 15.285C6.68796 12.8899 8.31549 12.4711 9.97662 12.4711C12.8255 12.4711 14.1057 13.9796 14.1057 15.348C14.1057 16.7164 13.3395 17.3509 11.8647 17.3509H7.07594C2.89788 17.3509 0 20.8468 0 24.298C0 26.6874 1.43284 28.9466 3.50575 29.9411C4.7355 30.5321 6.03528 30.8151 7.31824 30.8151C9.95001 30.8165 12.5033 29.6217 14.1925 27.4396V29.9117H18.5344C18.5344 29.9117 18.6381 18.8888 18.4784 14.932ZM8.30988 26.735C6.56891 26.735 4.90637 25.9017 4.90637 24.1845C4.90637 22.2292 6.35462 21.2516 8.14181 21.2516C10.9304 21.2516 12.8143 20.9183 14.1253 20.232H14.1239C14.2317 23.5752 12.0047 26.735 8.30988 26.735Z"
+                            fill="white" />
+                        <path
+                            d="M100.023 0.152672C97.9483 0.152672 93.4985 1.60652 93.4985 7.4359V8.76649H89.8345V13.2667H93.5363V29.9453H98.4371V13.2037H103.164V8.76649H98.4315L98.4427 6.86025C98.4427 5.21872 99.678 4.7285 100.78 4.7285C101.883 4.7285 103.989 4.7257 103.989 4.7257V0.152672H100.023Z"
+                            fill="white" />
+                        <path d="M75.6121 0.152672V29.9355H80.1627L80.1641 0.152672H75.6121Z" fill="white" />
+                        <path
+                            d="M43.7601 8.30287C39.2319 8.30287 37.1716 11.7736 36.9545 11.9907C35.9951 9.76652 34.086 8.30287 31.3786 8.30287C28.6712 8.30287 26.7832 9.50601 25.3671 10.9304V8.76648H20.5742V29.9201H25.3868V17.3411C25.3868 14.1575 26.786 12.4697 29.1096 12.4697C31.9585 12.4697 33.1406 14.7597 33.1406 17.3411L33.149 29.9551H38.0862L38.096 17.2851C38.096 13.2989 40.0653 12.4697 42.1872 12.4697C44.3091 12.4697 45.8162 13.8717 45.8162 17.3411L45.8232 29.9229H50.6778V29.5027C50.6778 28.0236 50.7058 19.8524 50.7338 18.4041C50.8612 11.8156 48.3037 8.30287 43.7601 8.30287Z"
+                            fill="white" />
+                        <path
+                            d="M63.6666 8.30287C60.095 8.30287 58.1747 10.4864 57.438 11.2232C57.431 11.2302 57.424 11.2358 57.417 11.2428V8.76648H52.5933V39.7762H57.3862V28.2225C58.707 29.7758 60.941 30.8851 63.4551 30.8851C70.1458 30.8851 73.9597 25.5473 73.8785 19.7305C73.7889 13.4333 69.678 8.30287 63.6666 8.30287ZM68.5813 19.7305C68.5813 21.6004 68.241 26.9129 63.2366 26.9129C58.2322 26.9129 57.015 22.9254 57.015 19.7305C57.015 16.5357 58.0921 12.5482 62.7982 12.5482C67.5043 12.5482 68.5813 17.8593 68.5813 19.7305Z"
+                            fill="white" />
+                        <path
+                            d="M134.658 8.30263C126.629 8.30263 123.973 14.4444 123.973 19.593C123.973 25.7082 128.562 30.8834 134.413 30.8834C143.793 30.8834 144.648 22.1618 144.648 22.1618H141.195C140.545 22.1632 140.111 22.5371 139.876 23.089C139.086 24.9434 136.667 26.5275 134.317 26.5275C131.563 26.5275 129.441 23.8481 129.441 21.0875H144.854C145.812 14.8743 142.031 8.30123 134.657 8.30123L134.658 8.30263ZM129.451 17.2036C129.451 14.6979 131.457 12.1922 134.658 12.1922C138.18 12.1922 139.863 14.8141 139.863 17.2036H129.451Z"
+                            fill="white" />
+                        <path
+                            d="M122.212 8.76623C121.498 8.76623 120.97 9.1542 120.61 9.90074C120.61 9.90074 115.493 21.6617 115.082 22.6072C114.653 21.6253 110.953 13.1488 109.509 9.90074C109.331 9.50016 108.894 8.77043 107.971 8.77043L104.732 8.76623H104.115L112.178 27.1704C112.308 27.4603 112.603 28.0696 112.603 28.5206C112.603 29.022 112.304 29.6173 112.159 29.9338L110.203 34.5363C109.95 35.2072 109.25 35.675 108.444 35.675L103.989 35.6554V39.839L110.244 39.8502C111.778 39.8502 112.898 39.1737 113.505 37.7269C116.943 29.522 125.584 8.76483 125.584 8.76483H122.212V8.76623Z"
+                            fill="white" />
+                        <path d="M87.5133 0.14978H82.6167V4.97632H87.5133V0.14978Z" fill="white" />
+                        <path d="M87.3703 8.76652H82.6418V29.9383H87.3703V8.76652Z" fill="white" />
+                    </svg>
+                </div>
+                <div class="nav-items">
+                    <a href="./homepage.html" class="nav-link">Home</a>
+                    <a href="./science.html" class="nav-link">Our Science</a>
+                    <a href="./application.html" class="nav-link">Applications</a>
+                    <a href="./Sustainability.html" class="nav-link">Social Impact</a>
+                    <a href="./team.html" class="nav-link">People</a>
+                    <a href="./blog.html" class="nav-link">Blog</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <a href="#contact" class="btn-click contact-btn">Contact Us</a>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="./homepage.html" class="nav-link">Home</a>
+                <a href="./science.html" class="nav-link">Our Science</a>
+                <a href="./application.html" class="nav-link">Applications</a>
+                <a href="./Sustainability.html" class="nav-link">Social Impact</a>
+                <a href="./team.html" class="nav-link">People</a>
+                <a href="./blog.html" class="nav-link">Blog</a>
+                <a href="#contact" class="mobile-contact">Contact Us</a>
+            </div>
+        </section>
+        <p>Our Blog</p>
+    </div>
+
+    <!-- Section-tab  -->
+    <section aria-label="Our Mission" class="mission-section container blog-wp">
+        <div class="mission-section_tags">
+            <span class="tab-btn active" data-tab="tab1">All Posts</span>
+            <span class="tab-btn" data-tab="tab2">Press Release</span>
+            <span class="tab-btn" data-tab="tab3">Scientific Publications</span>
+            <span class="tab-btn" data-tab="tab4">Industry Insights</span>
+        </div>
+
+
+        <div class="container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/167a4c035c8cf68b61fdfd72c156943a7689376f.jpg"
+                            alt="Cereal bowl illustration" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/4cd56f5626a3c447c3b59f0a8f817c712e3d8e0d.jpg"
+                            alt="Rolling hills landscape" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/51694fef7a6dd8887e12fd0d48e9543466687ec6.jpg"
+                            alt="Abstract data visualization" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/167a4c035c8cf68b61fdfd72c156943a7689376f.jpg"
+                            alt="Cereal bowl illustration" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/5d9bc0569a5d1d66fd67d13fe68a3fd9e19da66b.jpg"
+                            alt="Rolling hills landscape" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/5ef6ca6cd7de06cc64bc2e6cbb246522539e794a.jpg"
+                            alt="Abstract data visualization" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/67f0e4fd7e75bfef0ebe85ac767b0de1027604ba.jpg"
+                            alt="Cereal bowl illustration" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/860c03c6c3aa66a297f912ccd97360e45db2452f.jpg"
+                            alt="Rolling hills landscape" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/becd5aed2ececb7659343eda3950ec4063ed9c1c.jpg"
+                            alt="Abstract data visualization" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/d9c92c67154f1340d2c46e20dc4c2958b7866325.jpg"
+                            alt="Cereal bowl illustration" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/dd67af502c499f05842dd5ec290092b111c52e2a.jpg"
+                            alt="Rolling hills landscape" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <a href="#" class="article-link">
+                        <img src="./asset/img/blog-web-page/efc0f0e03684811c842e4bdc5131037289216856.jpg"
+                            alt="Abstract data visualization" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Press Releases</span>
+                            <h4 class="article-title">Digestiva Closes $18.4 million Series A Financing</h4>
+                            <p class="article-excerpt">Powered by Amplifye's protein research, our AI platform
+                                identifies optimal enzyme-protein combinations to enhance digestive health and
+                                nutritional absorption.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- cta section -->
+    <section class="container-fluid cta-section">
+        <div class="overlay">
+            <p class="content-text">
+                We rethink better
+            </p>
+            <h1 class="cta-blog_title">
+                Learn more about science
+            </h1>
+            <a href="#" class="btn-click cta-blog_btn ">Learn More</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo"><img src="./asset/img/logo/Group 3.svg" alt=""></div>
+                    <div class="brand-tagline">
+                        Amplifying Nutrition,<br>
+                        One Protein at a Time
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <div class="contact-info">
+                        2860 W Covell Blvd<br>
+                        Suite 1 Davis, CA 95616<br><br>
+                        <a href="mailto:info@amplifye.com">info@amplifye.com</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#science">Our Science</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#impact">Social Impact</a></li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Helpful Links</h4>
+                    <ul>
+                        <li><a href="#cookie-policy">Cookie policy</a></li>
+                        <li><a href="#privacy-policy">Privacy policy</a></li>
+                        <li><a href="#terms">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © Copyright Amplifye 2025
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Threads">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.12-1.245.428-1.245.6 0 1.353.557 1.103 2.322l-.1.755c-.18 1.382-.735 2.708-1.649 3.946C16.364 23.197 14.393 24 12.186 24z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./asset/script.js"></script>
+</body>
+
+</html>
